@@ -1,0 +1,8 @@
+main
+*.o
+data/results.csv
+analysis/*.png
+analysis/obj2_subnormals
+analysis/*_results.txt
+.DS_Store
+external/
