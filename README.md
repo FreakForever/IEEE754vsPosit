@@ -21,8 +21,8 @@ To build and run this project, you need:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/FreakForever/IEEE745vsPosit.git
-cd IEEE745vsPosit
+git clone https://github.com/FreakForever/IEEE754vsPosit.git
+cd IEEE754vsPosit
 ```
 
 ### 2. Setup External Libraries
