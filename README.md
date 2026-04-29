@@ -47,9 +47,16 @@ make
 ### Primary Benchmark
 Run the dot product precision and performance comparison:
 ```bash
+mkdir -p data
 ./main
 ```
-This generates `data/results.csv` and prints a summary table to the terminal.
+This generates `data/results.csv` and prints a summary table to the terminal. The `data/` directory must exist beforehand or the CSV will silently not be written.
+
+### Primary Benchmark Report
+Generate the multi-panel benchmark report (`analysis/benchmark_report.png`) from the CSV:
+```bash
+python3 analysis/plot.py
+```
 
 ### Analysis Suite
 To run the extended analysis objectives (Precision distribution, Dynamic range, Exceptions, etc.):
