@@ -15,7 +15,7 @@ void run_dot_product_benchmark() {
 
     double total_err_ieee = 0, total_err_ieee32 = 0, total_err_posit = 0;
     double total_time_ieee = 0, total_time_ieee32 = 0, total_time_posit = 0;
-    const int num_trials = 100;
+    const int num_trials = 100;  // sets the number of trials for the benchmark
 
     std::cout << "Starting benchmark (" << num_trials << " trials of 1000-element dot products)..." << std::endl;
 
@@ -43,7 +43,7 @@ void run_dot_product_benchmark() {
 
         // Ground truth (256-bit)
         double truth = dot_mpfr(a, b);
-
+        // compute the error 
         double err_ieee = compute_error(ieee, truth);
         double err_ieee32 = compute_error(ieee32, truth);
         double err_posit = compute_error(posit, truth);
